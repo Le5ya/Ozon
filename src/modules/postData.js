@@ -1,13 +1,7 @@
-const postData = () => {
-  return fetch('http://localhost:3000/goods', {
+const postData = (cart) => {
+  return fetch('https://jsonplaceholder.typicode.com/posts', {
   method: 'POST',
-  body: JSON.stringify({
-		title: "Civilization VI",
-		price: 3000,
-		sale: true,
-		img: "https://upload.wikimedia.org/wikipedia/ru/3/3e/Civilization_VI_Cover_Art.jpg",
-		category: "Игры и софт"
-	}),
+  body: JSON.stringify(cart),
   headers: {
     'Content-type': 'application/json; charset=UTF-8',
     },
