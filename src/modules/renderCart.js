@@ -2,7 +2,7 @@ const renderCart = (goods) => {
   const cartWrapper = document.querySelector(".cart-wrapper")
 
 
-  cartWrapper.innerHTML = ''
+  // cartWrapper.innerHTML = ''
 
   if (goods.lenth === 0) {
     cartWrapper.insertAdjacentHTML('beforeend', `
